@@ -32,7 +32,7 @@ func main(){
 
 	//Now, we take the slice of strings and turn it into a slice
 	//of person structs...
-	for i:=0; i < len(string_splits) - 1; i++ {
+	for i:=0; i < len(string_splits) - 1; i += 2 {
 		pSlice = append(pSlice, Person{fname: string(string_splits[i]),
 							lname: string(string_splits[i+1])})
 	}
